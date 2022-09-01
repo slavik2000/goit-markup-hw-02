@@ -1,3 +1,39 @@
-body{
-   background-color: tomato;
-}  
+:root {
+  --color-primary-hover: #2196f3;
+
+  --color-btn-banner: #2196f3;
+  --color-btn-banner-hover: #188ce8;
+}
+
+body {
+  background-color: tomato;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-primary-hover);
+}
+
+.contacts-mail:hover,
+.contacts-mail:focus,
+.contacts-number:hover,
+.contacts-number:focus {
+  color: var(--color-primary-hover);
+}
+
+.main-button {
+  background-color: var(--color-btn-banner);
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--color-btn-banner-hover);
+}
