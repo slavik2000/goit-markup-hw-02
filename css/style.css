@@ -1,13 +1,16 @@
 :root {
   --color-primary-hover: #2196f3;
 
+  --color-banner: #2F303A;
   --color-btn-banner: #2196f3;
   --color-btn-banner-hover: #188ce8;
+  --color-black: #000000;
+  --color-white: #ffffff;
 }
 
 body {
-  background-color: green;
-  font-family: 'Roboto', sans-serif;
+  background-color: #cccccc;
+  font-family: "Roboto", sans-serif;
 }
 
 .link {
@@ -16,6 +19,16 @@ body {
 
 .list {
   list-style: none;
+}
+
+.logo {
+  color: var(--color-black);
+}
+.logo > span {
+  color: var(--color-btn-banner);
+}
+.logo-dark {
+  color: var(--color-white);
 }
 
 .nav-link:hover,
@@ -34,7 +47,20 @@ body {
   background-color: var(--color-btn-banner);
 }
 
+.main-banner{
+  background-color: var(--color-banner);
+}
+
 .main-button:hover,
 .main-button:focus {
   background-color: var(--color-btn-banner-hover);
+}
+
+
+
+.footer{
+  background-color: var(--color-banner);
+}
+.addres-street {
+  color: var(--color-white);
 }
