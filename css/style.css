@@ -6,10 +6,11 @@
   --color-btn-banner-hover: #188ce8;
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-gray: #F5F4FA;
 }
 
 body {
-  background-color: #cccccc;
+  background-color: var(--color-white);
   font-family: "Roboto", sans-serif;
 }
 
@@ -21,14 +22,19 @@ body {
   list-style: none;
 }
 
-.logo {
-  color: var(--color-black);
-}
-.logo > span {
+/* start header */
+.logo{
   color: var(--color-btn-banner);
-}
-.logo-dark {
+} 
+.logo .logo-dark{
+  color: var(--color-black);
+} 
+.logo .logo-light{
   color: var(--color-white);
+} 
+
+.logo-light {
+  /* color: var(--color-white); */
 }
 
 .nav-link:hover,
@@ -42,7 +48,9 @@ body {
 .contacts-number:focus {
   color: var(--color-primary-hover);
 }
+/* end header */
 
+/* start main */ 
 .main-button {
   background-color: var(--color-btn-banner);
 }
@@ -51,16 +59,45 @@ body {
   background-color: var(--color-banner);
 }
 
+.main-button{
+  color: var(--color-white);  
+}
+
 .main-button:hover,
 .main-button:focus {
   background-color: var(--color-btn-banner-hover);
 }
 
+.main-title{
+  color: var(--color-white);
+  text-align: center;
+  text-transform: uppercase;
+}
+/* end main */
 
-
+/* start footer */
 .footer{
   background-color: var(--color-banner);
 }
-.addres-street {
+address {
+  font-style: normal;
+}
+.address-link{
+  color: rgba(255, 255, 255, .6) ;
+  text-decoration: none;
+}
+.addres-street {  
   color: var(--color-white);
 }
+/* end footer */
+
+/*start style portfolio */
+.filter button {
+  background-color: var(--color-gray);
+}
+.filter button:hover, 
+.filter button:focus {
+  background-color: var(--color-primary-hover);
+  color: var(--color-white);
+}
+/*end style portfolio */
