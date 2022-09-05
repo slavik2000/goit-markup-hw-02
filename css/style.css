@@ -87,6 +87,8 @@ body {
   background-color: var(--color-primary-hover);
   line-height: 1.88;
   cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
 }
 
 .main-button:hover,
@@ -138,7 +140,7 @@ body {
 .footer {
   background-color: var(--color-banner);
 }
-address {
+.address {
   font-style: normal;
 }
 .address-item {
@@ -162,6 +164,7 @@ address {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+  font-family: inherit;
 }
 .filter button:hover,
 .filter button:focus {
