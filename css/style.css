@@ -5,14 +5,17 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --color-gray: #f5f4fa;
+  --primary-color: #212121;
+  --secondary-color: #757575;
 
-  --primary-font-famaly:"Roboto", sans-serif;
-  --secondary-font-famaly:"Raleway", sans-serif;
+  --primary-font-famaly: "Roboto", sans-serif;
+  --secondary-font-famaly: "Raleway", sans-serif;
 }
 
 body {
   background-color: var(--color-white);
   font-family: var(--primary-font-famaly);
+  color: var(primary-color);
 }
 
 .link {
@@ -73,12 +76,6 @@ body {
 /* end header */
 
 /* start main */
-.main-button {
-  background-color: var(--color-primary-hover);
-  line-height: 1.88;
-  cursor: pointer;
-}
-
 .main-banner {
   background-color: var(--color-banner);
 }
@@ -87,6 +84,9 @@ body {
   color: var(--color-white);
   font-size: 16px;
   letter-spacing: 0.06em;
+  background-color: var(--color-primary-hover);
+  line-height: 1.88;
+  cursor: pointer;
 }
 
 .main-button:hover,
@@ -101,6 +101,7 @@ body {
   line-height: 1.36;
   font-size: 44px;
   letter-spacing: 0.06em;
+  font-weight: 900;
 }
 
 .title-page {
@@ -112,6 +113,7 @@ body {
   line-height: 1.71;
   font-size: 14px;
   letter-spacing: 0.03em;
+  color: var(--secondary-color);
 }
 .title-section {
   line-height: 1.16;
@@ -128,6 +130,7 @@ body {
 .team-person {
   font-size: 16px;
   letter-spacing: 0.03em;
+  color: var(--secondary-color);
 }
 /* end main */
 
