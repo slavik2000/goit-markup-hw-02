@@ -11,8 +11,8 @@
   --secondary-font-famaly: "Raleway", sans-serif;
   --main-font-size: 14px;
   --main-letter-spacing: 0.3em;
-  --main-color-link:#212121;
-  --secondary-color-link:#757575;
+  --main-color-link: #212121;
+  --secondary-color-link: #757575;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 
 .link {
   text-decoration: none;
-  color:var(--main-color-link);
+  color: var(--main-color-link);
 }
 
 .list {
@@ -61,11 +61,24 @@ body {
   color: var(--color-primary-hover);
 }
 
+.nav-link {
+  font-weight: 500;
+}
+
+.active {
+  color: var(--color-primary-hover);
+}
+
 .contacts-header {
   font-weight: 500;
 }
 .contacts-item {
   letter-spacing: 0.02em;
+}
+
+.contacts-mail,
+.contacts-number {
+  color: var(--secondary-color-link);
 }
 
 .contacts-mail:hover,
@@ -88,7 +101,7 @@ body {
   background-color: var(--color-primary-hover);
   line-height: 1.88;
   cursor: pointer;
-  font-family: inherit;
+  font-family: var(--primary-font-famaly);
   font-weight: 700;
 }
 
@@ -108,7 +121,7 @@ body {
 }
 
 .title-page {
-  line-height: 1.14;  
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 .desc-page {
@@ -127,11 +140,15 @@ body {
 .team-name {
   font-size: 16px;
   letter-spacing: 0.03em;
+  font-weight: 500;
+  line-height: 1.18;
 }
 .team-person {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  line-height: 1.18;
+  font-weight: 400;
 }
 /* end main */
 
@@ -162,7 +179,7 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
-  font-family: inherit;
+  font-family: var(--primary-font-famaly);
 }
 .filter-item button:hover,
 .filter-item button:focus {
@@ -180,5 +197,6 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-color-link);
+  font-weight: 400;
 }
 /*end style portfolio */
